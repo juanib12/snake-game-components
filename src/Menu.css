@@ -1,0 +1,36 @@
+.wrapper {
+  position: relative;
+  width: 400px;
+  height: 350px;
+  background-color: rgb(165, 255, 151);
+  border-radius: 10px;
+  margin: 50px auto;
+  margin-top: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.start {
+  margin: 100px;
+  background: #1e1e1e;
+  color: white;
+  border-radius: 7px;
+  border: 0px;
+  padding: 15px 25px;
+  font-size: 1.2em;
+  box-shadow: 0 0 70px #abbfc0;
+  cursor: pointer;
+}
+
+.start:hover {
+  background-color: white;
+  transition: all 0.5s ease;
+  border: 1px solid #121212;
+  color: #121212;
+}
+
+.start:not(hover) {
+  transition: all 0.5s ease;
+}
