@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import Snake from "./Snake";
 import Food from "./Food";
-import Button from "./Button";
+import "./App.css";
 import Menu from "./Menu";
-import Alert from "./Alert";
 
 const getRandomFood = () => {
   let min = 1;
@@ -22,7 +21,6 @@ const initialState = {
     [0, 0],
     [0, 2],
   ],
-  
 };
 
 class App extends Component {
@@ -201,6 +199,9 @@ class App extends Component {
     const { route, snakeDots, food } = this.state;
     return (
       <div>
+        <div className="by">
+          <p>By: Juan Bianco</p>
+        </div>
         {route === "menu" ? (
           <div>
             <Menu onRouteChange={this.onRouteChange} />
