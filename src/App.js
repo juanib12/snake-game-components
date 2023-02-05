@@ -139,7 +139,7 @@ class App extends Component {
   };
 
   gameOver() {
-    {this.snakeDots.length - 2 > 5 ? alert(`Buena crack!!! Tu puntación es: ${this.state.snakeDots.length - 2}`) : alert(`Seguí intentándolo! Tu puntación es: ${this.state.snakeDots.length - 2}`)}
+    {(this.state.snakeDots.length - 2) > 5 ? alert(`Buena crack!!! Tu puntación es: ${this.state.snakeDots.length - 2}`) : alert(`Seguí intentándolo! Tu puntación es: ${this.state.snakeDots.length - 2}`)}
     this.setState(initialState);
   }
 
